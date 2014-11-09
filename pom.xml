@@ -296,7 +296,7 @@
 			<version>2.3.15.3</version>
 		</dependency>
 		<!-- 可以看到struts2应用里的Action等各种资源的影射情况 -->
-		<!-- 可以使用类似http://localhost:9999/oa/config-browser/showConstants.sy的url来访问 -->
+		<!-- 可以使用类似http://localhost:9999/EasyUI/config-browser/showConstants.sy的url来访问 -->
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-config-browser-plugin</artifactId>
@@ -306,7 +306,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>oa</finalName>
+		<finalName>EasyUI</finalName>
 
 		<plugins>
 			<!-- 编译的时候使用JDK7和UTF8编码 -->
@@ -368,10 +368,10 @@
 					<stopPort>9998</stopPort>
 					<stopKey>stop-jetty-for-it</stopKey>
 					<webApp>
-						<!-- 指定项目路径(如果不写，则按照pom.xml里面的artifactId属性值配置)，访问路径为http://localhost:9999/oa -->
-						<!-- 配置<contextPath>/oa</contextPath>，则访问路径为http://localhost:9999/oa -->
+						<!-- 指定项目路径(如果不写，则按照pom.xml里面的artifactId属性值配置)，访问路径为http://localhost:9999/EasyUI-->
+						<!-- 配置<contextPath>/EasyUI</contextPath>，则访问路径为http://localhost:9999/oa -->
 						<!-- 配置<contextPath>/</contextPath>，则访问路径为http://localhost:9999 -->
-						<contextPath>/oa</contextPath>
+						<contextPath>/EasyUI</contextPath>
 						<!-- 更改jetty默认webdefault.xml文件，主要修改了useFileMappedBuffer属性为false，使其不锁定静态文件 -->
 						<!-- 此文件在C盘\用户目录\.m2\repository\org\eclipse\jetty\jetty-webapp\9.1.0.RC1\找到jar包，打开jar包目录org\eclipse\jetty\webapp\目录中 -->
 						<defaultsDescriptor>webdefault.xml</defaultsDescriptor>
