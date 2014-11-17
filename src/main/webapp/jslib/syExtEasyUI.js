@@ -380,3 +380,54 @@ sy.progressBar = function(options) {
 		}
 	}
 };
+var cardview = $.extend({}, $.fn.datagrid.defaults.view, {   
+    renderRow: function(target, fields, frozen, rowIndex, rowData){
+        var cc = [];   
+        cc.push('<td colspan=' + fields.length + ' style="padding:5px;border:0;">');   
+        if (!frozen){   
+            cc.push('<img src="' +sy.contextPath+ rowData.image + '" style="width:200px;height:200px;float:left">');   
+            cc.push('<div style="float:left;width:100px;">');   
+            for(var i=0; i<fields.length; i++){
+            	if(i==2){
+            		cc.push('<span style="height:80px;display:block">' + fields[i] + '</span>');  
+            	}
+            	else if(i==7){
+            		cc.push('<span style="height:40px;display:block;">' + '</span>');  
+            	}
+            	else{
+            		cc.push('<span style="height:20px;display:block">' + fields[i] + '</span>');  
+            	}
+            }   
+            cc.push('</div>');   
+            cc.push('<div style="float:left;width:500px;">');   
+            for(var i=0; i<fields.length; i++){
+            	if(i==2){
+            		cc.push('<span style="height:80px;display:block">' +  rowData[fields[i]] + '</span>'); 
+            	}
+            		
+            	else if (i==7){
+            		cc.push('<span style="height:40px;display:block;">' +  '</span>'); 
+            	}
+            	else{
+            		cc.push('<span style="height:20px;display:block">' +  rowData[fields[i]] + '</span>'); 
+            	}
+            }   
+            cc.push('</div>'); 
+            cc.push('<div style="float:left;width:200px;">');   
+            for(var i=0; i<fields.length; i++){
+            	if(i==2)
+            		cc.push('<span style="height:80px;display:block">'  + '</span>');
+            	else if(i==7){
+            		cc.push('<span style="height:20px;display:block">' +  fields[i] + '</span>'); 
+            		cc.push('<span style="height:20px;display:block">' +'$'+  rowData[fields[i]] + '</span>'); 
+            	}
+            	else{
+            		cc.push('<span style="height:20px;display:block">' +   '</span>'); 
+            	}
+            }   
+            cc.push('</div>'); 
+        }   
+        cc.push('</td>');   
+        return cc.join('');   
+    }   
+});  
