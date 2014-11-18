@@ -413,7 +413,7 @@ var cardview = $.extend({}, $.fn.datagrid.defaults.view, {
             	}
             }   
             cc.push('</div>'); 
-            cc.push('<div style="float:left;width:200px;">');   
+            cc.push('<div style="float:left;width:530px;">');   
             for(var i=0; i<fields.length; i++){
             	if(i==2)
             		cc.push('<span style="height:80px;display:block">'  + '</span>');
