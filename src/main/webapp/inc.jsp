@@ -63,10 +63,10 @@ if (StringUtils.indexOfIgnoreCase(User_Agent, "MSIE") > -1 && (StringUtils.index
 <script type="text/javascript" src="<%=contextPath%>/jslib/plupload-2.0.0/js/i18n/zh_CN.js"></script>
 
 <%-- 引入EasyUI --%>
-<link id="easyuiTheme" rel="stylesheet" href="<%=contextPath%>/jslib/jquery-easyui-1.3.4/themes/<%=easyuiTheme%>/easyui.css" type="text/css">
+<link id="easyuiTheme" rel="stylesheet" href="<%=contextPath%>/jslib/jquery-easyui-1.4.1/themes/<%=easyuiTheme%>/easyui.css" type="text/css">
 <!-- <link rel="stylesheet" href="<%=contextPath%>/jslib/jquery-easyui-1.3.4/themes/icon.css" type="text/css"> -->
-<script type="text/javascript" src="<%=contextPath%>/jslib/jquery-easyui-1.3.4/jquery.easyui.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="<%=contextPath%>/jslib/jquery-easyui-1.3.4/locale/easyui-lang-zh_CN.js" charset="utf-8"></script>
+<script type="text/javascript" src="<%=contextPath%>/jslib/jquery-easyui-1.4.1/jquery.easyui.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="<%=contextPath%>/jslib/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js" charset="utf-8"></script>
 <%-- 引入EasyUI Portal插件 --%>
 <link rel="stylesheet" href="<%=contextPath%>/jslib/jquery-easyui-portal/portal.css" type="text/css">
 <script type="text/javascript" src="<%=contextPath%>/jslib/jquery-easyui-portal/jquery.portal.js" charset="utf-8"></script>

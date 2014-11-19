@@ -14,6 +14,7 @@
 	var addFun = function() {
 		var dialog = parent.sy.modalDialog({
 			title : 'add product information',
+			height:'500px',
 			url : sy.contextPath + '/securityJsp/base/SyproductForm.jsp',
 			buttons : [ {
 				text : 'add',

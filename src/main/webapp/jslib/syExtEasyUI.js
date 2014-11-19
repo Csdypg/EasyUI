@@ -391,6 +391,9 @@ var cardview = $.extend({}, $.fn.datagrid.defaults.view, {
             	if(i==2){
             		cc.push('<span style="height:80px;display:block">' + fields[i] + '</span>');  
             	}
+            	else if(i==0){
+            		cc.push('<span style="visibility:hidden;height:20px;display:block">' + fields[i] + '</span>');  
+            	}
             	else if(i==7){
             		cc.push('<span style="height:40px;display:block;">' + '</span>');  
             	}
@@ -404,7 +407,9 @@ var cardview = $.extend({}, $.fn.datagrid.defaults.view, {
             	if(i==2){
             		cc.push('<span style="height:80px;display:block">' +  rowData[fields[i]] + '</span>'); 
             	}
-            		
+            	else if(i==0){
+            		cc.push('<span style="visibility:hidden;height:20px;display:block">' +rowData[fields[i]] + '</span>');  
+            	}
             	else if (i==7){
             		cc.push('<span style="height:40px;display:block;">' +  '</span>'); 
             	}
@@ -413,7 +418,7 @@ var cardview = $.extend({}, $.fn.datagrid.defaults.view, {
             	}
             }   
             cc.push('</div>'); 
-            cc.push('<div style="float:left;width:530px;">');   
+            cc.push('<div style="float:left;width:200px;">');   
             for(var i=0; i<fields.length; i++){
             	if(i==2)
             		cc.push('<span style="height:80px;display:block">'  + '</span>');

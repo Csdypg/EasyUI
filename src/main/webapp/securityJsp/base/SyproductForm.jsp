@@ -157,13 +157,13 @@
 			<table class="table" style="width: 100%;">
 				<tr>
 					<th>ID</th>
-					<td><input name="data.id" value="<%=id%>" readonly="readonly" /></td>
+					<td><input name="data.id"  class="easyui-textbox" value="<%=id%>" readonly="readonly" /></td>
 					<th>product</th>
-					<td><input name="data.product" class="easyui-validatebox" data-options="required:true" /></td>
+					<td><input name="data.product" class="easyui-textbox" data-options="required:true" /></td>
 				</tr>
 				<tr>
 					<th>specifications</th>
-					<td><input name="data.specifications" /></td>
+					<td><input name="data.specifications"  class="easyui-textbox" data-options="required:true,multiline:true" style="height:60px"/></td>
 					<th>color</th>
 					<td><select class="easyui-combobox" name="data.color" data-options="panelHeight:'auto',editable:false,required:true" style="width: 155px;">
 							<option value="1">blue</option>
@@ -172,15 +172,15 @@
 				</tr>
 				<tr>
 					<th>finishing</th>
-					<td><input name="data.finishing" class="easyui-validatebox" data-options="required:true" /></td>
+					<td><input name="data.finishing" class="easyui-textbox" data-options="required:true" /></td>
 					<th>packing</th>
-					<td><input name="data.packing" class="easyui-validatebox" data-options="required:true" /></td>
+					<td><input name="data.packing" class="easyui-textbox" data-options="required:true" /></td>
 				</tr>
 				<tr>
 					<th>qtty</th>
-					<td><input name="data.qtty" class="easyui-validatebox" data-options="required:true" /></td>
+					<td><input name="data.qtty" class="easyui-textbox" data-options="required:true" /></td>
 					<th>fob</th>
-					<td><input name="data.fob" class="easyui-validatebox" data-options="required:true" /></td>
+					<td><input name="data.fob" class="easyui-textbox" data-options="required:true" /></td>
 				</tr>
 				<tr>
 					<th>upload image</th>
